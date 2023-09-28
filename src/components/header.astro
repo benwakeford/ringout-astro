@@ -1,5 +1,6 @@
 ---
 import headerBG from "../assets/banner-2023.jpg";
+import bellType from "/images/bell-type.svg?raw";
 import { Image } from "astro:assets";
 ---
 
@@ -14,10 +15,8 @@ import { Image } from "astro:assets";
     class="absolute w-[200%] left-[-30%] max-w-none sm:max-w-full sm:left-auto sm:w-full sm:h-full sm:object-contain sm:object-top -z-10"
   />
   <div class="container pt-[25%] sm:pt-[14%]">
-    <img
-      src="/images/bell-type.svg"
-      alt="Ring Out title graphic"
-      class="w-[80%] m-auto sm:w-[60%]"
-    />
+    <div class="w-[80%] m-auto sm:w-[60%]">
+      <Fragment set:html={bellType} />
+    </div>
   </div>
 </header>
