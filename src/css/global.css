@@ -6,12 +6,21 @@
   html {
     @apply font-body text-dark;
   }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
+  }
 }
 
-.page {
-  overflow: clip;
-}
-
-.lead {
-  @apply font-display text-xl/normal sm:text-2xl/normal xl:text-3xl/normal;
+@layer components {
+  .page {
+    overflow: clip;
+  }
+  .lead {
+    @apply font-display text-xl/normal sm:text-2xl/normal xl:text-3xl/normal;
+  }
 }
