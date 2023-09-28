@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    @apply font-body text-dark;
+  }
+}
+
+.page {
+  overflow: clip;
+}
+
+.lead {
+  @apply font-display text-xl sm:text-2xl xl:text-3xl leading-normal sm:leading-normal xl:leading-normal;
+}

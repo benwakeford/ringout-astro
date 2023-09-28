@@ -1,5 +1,6 @@
 ---
 import Header from "../components/header.astro";
+import "../css/global.css";
 const { title } = Astro.props;
 ---
 
@@ -9,13 +10,19 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;700&family=Lato:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <Header />
-    <main class="bg-slate-200 py-4">
-      <div class="container">
+    <div class="page">
+      <Header />
+      <main>
         <slot />
-      </div>
-    </main>
+      </main>
+    </div>
   </body>
 </html>
