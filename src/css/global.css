@@ -13,5 +13,5 @@
 }
 
 .lead {
-  @apply font-display text-xl sm:text-2xl xl:text-3xl leading-normal sm:leading-normal xl:leading-normal;
+  @apply font-display text-xl/normal sm:text-2xl/normal xl:text-3xl/normal;
 }

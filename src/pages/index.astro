@@ -1,8 +1,12 @@
 ---
 import MainLayout from "../layouts/main-layout.astro";
 import Intro from "../components/intro.astro";
+
+const title = "Main homepage";
+const description =
+  "Ring Out shines a light on the historical bell-founding activities of the Cockey family in Frome, promotes church bell-ringing as an vibrant cultural tradition and presents new and exciting ways with bells.";
 ---
 
-<MainLayout title="Main homepage">
+<MainLayout {title} {description}>
   <Intro />
 </MainLayout>
